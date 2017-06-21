@@ -1,3 +1,62 @@
 a {
   color: red;
 }
+body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+div {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 15px;
+  margin: 15px;
+  border: 2px solid lightgrey;
+  border-radius: 2%;
+  justify-content: space-around;
+  text-align: center;
+}
+div1 {
+  display: flex;
+  align-self: center;
+  display: inline-block;
+  flex-wrap: wrap;
+}
+div2 {
+  display: flex;
+  flex-flow: column;
+  width: 500px;
+  float: right;
+}
+div3 {
+  margin-top: 500px;
+  display: flex;
+  flex-direction: row;
+}
+div4 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+h1 {
+  color: #5381CB;
+}
+h2 {
+  font-size: 45pt;
+  display: inline-block;
+  overflow: visible;
+}
+.avatar {
+  border: 2px solid lightgrey;
+  border-radius: 50%;
+  width: 50%;
+  height: auto;
+  margin: 50px;
+  float: left;
+}
+b {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}

@@ -2,13 +2,15 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link href="../css/styles.css" rel="stylesheet" />
     <title></title>
   </head>
   <body>
     {{#users}}
       <div>
         <img src='{{avatar}}' /><br />
-        <h1>{{name}}</h1>
+        <!-- trying to make name a button link for single page -->
+        <link type="link" url="localhost:3000/user/" + {{}}{{name}}</>
         {{#job}}
           {{job}}{{company}}
         {{/job}}
