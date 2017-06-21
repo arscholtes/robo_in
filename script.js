@@ -7,20 +7,24 @@ const app = express();
 
 // app.use('/styles', express.static(path.join(__dirname, "/public"))
 app.engine("mustache", mustacheExpress());
-app.set('views','./views')
-app.set('view engine','mustache')
+app.set('views', './views')
+app.set('view engine', 'mustache')
 
 app.use('/css', express.static('public'))
 
 
-app.get("/users/", function (req, res) {
-  res.render("users", {users: userData.users})
+app.get("/users/", function(req, res) {
+  res.render("users", {
+    users: userData.users
+  })
 });
 
 app.get("/user/:id", function(req, res) {
   let id = req.params.id;
   let user = userData.users[id];
-  res.render("user", {users: userData.users[id]})
+  res.render("user", {
+    users: userData.users[id]
+  })
 });
 
 app.listen(3000, function() {
